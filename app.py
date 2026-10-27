@@ -60,6 +60,7 @@ if uploaded_file is not None:
 with st.expander("Model Metrics (Flickr30k)"):
     metrics = {
         "Metric": ["BLEU-4", "Precision", "Recall", "F1-Score", "METEOR"],
-        "Score": ["0.1742", "0.4120", "0.3850", "0.3980", "0.2185"]
+        "Greedy Search": ["0.1662", "0.5823", "0.1777", "0.2668", "0.3640"],
+        "Beam Search (k=5)": ["0.1828", "0.5912", "0.1866", "0.2779", "0.3800"],
     }
     st.table(pd.DataFrame(metrics))
